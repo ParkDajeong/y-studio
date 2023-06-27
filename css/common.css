@@ -1,0 +1,61 @@
+:root {
+  /* --main-color-purple: #6837f8;
+  --main-color-green: #37d243; */
+}
+
+.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* Skip Navigation */
+.skipNav {
+  display: none;
+}
+
+/* Flex */
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.flex-box-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Font */
+.font-noto {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  letter-spacing: -1px;
+}
+
+/* ===== 반응형 ===== */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 750px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

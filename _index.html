@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YStudio</title>
+  <!-- Font - Noto Sans KR, Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Linearicons -->
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/_index.css">
+  <!-- Script -->
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+  <!-- FIX: 나중에 수정 -->
+  <div class="skipNav">
+    <a href="#">주메뉴 바로가기</a>
+  </div>
+  <header>
+    <div class="container flex-box">
+      <h1 class="logo">
+        <a href="#">
+          <img class="logo-img" src="assets/logo-symbol-120.png" alt="와이 스튜디오">
+        </a>
+      </h1> <!-- //logo -->
+      <div class="text-widget">
+        <span>HELLO YSTUDIO</span>
+      </div> <!-- //text-widget -->
+      <button type="button" class="toggle-menu flex-box">
+        <span class="text">MENU</span>
+        <span class="blind">메뉴 전체보기</span>
+        <i class="lnr lnr-menu icon icon-menu"></i>
+      </button> <!-- //toggle-menu -->
+    </div> <!-- //container -->
+    <div class="modal">
+      <div class="modal-cont flex-box-col">
+        <nav>
+          <h2 class="blind">주메뉴</h2>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link current">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">About</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Work</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Contact</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Story</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Favorite</a>
+            </li>
+          </ul> <!-- //menu -->
+        </nav> <!-- //nav -->
+        <div class="nav-footer">
+          <p class="email">E: hello@ystudio.co.kr</p>
+          <small class="copyright">© YStudio 2023</small>
+        </div> <!-- //nav-footer -->
+        <button type="button" class="toggle-menu btn-close flex-box-col">
+          <span class="blind">주메뉴 닫기</span>
+          <i class="lnr lnr-cross icon icon-close"></i>
+        </button> <!-- //toggle-menu.btn-close -->
+      </div> <!-- //modal-cont -->
+    </div> <!-- //modal-->
+  </header> <!-- //header -->
+  <main>
+    <section class="main-visual-sec">
+      <h2 class="blind">메인 슬라이드 배너</h2>
+      <div class="swiper main-visual">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="text-wrapper">
+              <small>Who we are?</small>
+              <p class="font-noto">우리는 수준 높은 결과물을 만듭니다.</p>
+              <button type="button" class="btn btn-more">See the more</button>
+            </div>
+            <!-- !!!!!!!!!!!!!!!!! 슬라이드 배너 움직임 나중에 추가 !!!!!!!!!!!!!!!!! -->
+            <!-- !!!!!!!!!!!!!!!!! 슬라이드 배너 움직임 나중에 추가 !!!!!!!!!!!!!!!!! -->
+            <div class="img-wrapper">
+              <div class="img-item">
+                <img src="assets/main_visual/item_creative.png" alt="">
+              </div>
+              <div class="img-item">
+                <img src="assets/main_visual/item_insight.png" alt="">
+              </div>
+              <div class="img-item">
+                <img src="assets/main_visual/item_people.png" alt="">
+              </div>
+            </div> <!-- img-wrapper -->
+          </li> <!-- //swiper-slide -->
+        </ul> <!-- //swiper-wrapper -->
+      </div> <!-- //swiper.main-visual -->
+    </section> <!-- //main-visual-sec -->
+    <section class="quote-sec">
+      <!-- FIX -->
+      <h3 class="blind">와이스튜디오 대표의 말</h3>
+      <div class="container">
+        <div class="quote-area flex-box">
+          <div class="quote-header">
+            <h3 class="quote-tit">
+              Great experience<br>build great brands.
+            </h3>
+            <div class="quote-icon">
+              <i class="icon-quotations"></i>
+            </div>
+          </div> <!-- //quote-header -->
+          <div class="quote-cont font-noto">
+            <blockquote class="quote">
+              다양한 온라인 서비스들을 구축하고 운영해온 풍부한 경험으로 UI/UX 기획과 디자인 그리고 구축에서 운영까지, 와이스튜디오는 고객의 디지털 서비스를 위해 수준 높은 결과물을 제작하는 디지털 에이전시(Digital agency) 입니다.
+            </blockquote>
+            <cite>Yangsu Choi, <span>YSTUDIO</span></cite>
+          </div> <!-- //quote-cont -->
+        </div>
+      </div> <!-- //container -->
+    </section> <!-- //quote-sec -->
+    <section class="project-sec">
+      
+    </section>
+  </main> <!-- //main -->
+</body>
+</html>

@@ -1,0 +1,301 @@
+
+
+/* ===== Header ===== */
+header {
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 30px 0 15px;
+}
+
+/* TODO: 'position: fixed' 가 viewport 말고 부모 따르는 이슈 */
+/* https://webisfree.com/2023-01-03/css-%EC%86%8D%EC%84%B1-position-fixed-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EB%B6%80%EB%AA%A8-%EC%9A%94%EC%86%8C%EC%97%90-relative-%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0 */
+header::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+header.on::after {
+  display: block;
+}
+
+header .container {
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+}
+
+/* Logo  */
+.logo {
+  min-width: 16.5%;
+  max-height: 60px;
+}
+
+.logo-img {
+  height: 42px;
+}
+
+/* Text Widget */
+.text-widget {
+  display: none;
+  margin-right: auto;
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Menu Button */
+.toggle-menu .text {
+  display: none;
+  padding-right: 15px;
+  font-weight: 600;
+}
+
+.toggle-menu .icon {
+  font-size: 32px;
+}
+
+/* Menu Modal */
+.modal {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 300px;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform .5s ease;
+  z-index: 10;
+}
+
+header.on .modal {
+  transform: translateX(0);
+}
+
+.modal-cont {
+  justify-content: space-between;
+  position: relative;
+  padding: 55px 40px;
+  height: 100%;
+}
+
+.menu-item {
+  padding: 3px 0;
+}
+
+.menu-link {
+  max-width: 75%;
+  color: #999;
+  font-size: 30px;
+  font-weight: 600;
+  transition: color .5s ease;
+}
+
+.menu-link.current, 
+.menu-link:hover {
+  color: #000;
+}
+
+.nav-footer {
+  white-space: pre-line;
+}
+
+.btn-close {
+  position: absolute;
+  top: 55px;
+  right: 40px;
+}
+
+/* ===== Main ===== */
+main {
+
+}
+
+.container {
+  max-width: 750px;
+  padding: 0 15px;
+}
+
+/* Main Visual Section */
+/* 추후 수정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.main-visual-sec {
+  background-color: lightsteelblue;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Quote Section */
+.quote-sec {
+  padding: 60px 0 40px;
+}
+
+.quote-area {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 15px;
+}
+
+.quote-header {
+  padding-bottom: 30px;
+}
+
+.quote-tit {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.quote-icon {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.icon-quotations {
+  background-color: #ffec03;
+  position: relative;
+  display: block;
+  width: 82px;
+  height: 82px;
+  font-size: 140px;
+  border-radius: 50%;
+}
+
+.icon-quotations::after {
+  content: "\275E";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -10%);
+}
+
+.quote-cont {
+  flex: 1;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.quote {
+  margin-bottom: 20px;
+  color: #303030;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.quote-cont cite span {
+  padding-left: 7px;
+  color: #999;
+}
+
+/* 반응형 */
+@media screen and (min-width: 481px) {
+  /* ===== Main ===== */
+  /* Quote Section */
+  .icon-quotations {
+    font-size: 180px;
+    width: 97px;
+    height: 97px;
+  }
+
+  .quote {
+    margin-bottom: 60px;
+  }
+
+  .quote-cont cite {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  /* ===== Header ===== */
+  header .container {
+    height: 80px;
+    padding: 0 40px;
+  }
+
+  /* logo */
+  .logo-img {
+    height: 60px;
+  }
+
+  /* Text Widget */
+  .text-widget {
+    display: block;
+  }
+
+  /* Menu Modal  */
+  .modal {
+    min-width: 550px;
+  }
+
+  .modal-cont {
+    padding: 55px 100px;
+  }
+
+  .menu-link {
+    font-size: 36px;
+  }
+
+  .btn-close {
+    right: 100px;
+  }
+
+  /* ===== Main ===== */
+  /* Quote Section */
+  .quote-area {
+    flex-direction: row;
+    padding: 0 30px;
+  }
+
+  .quote-header {
+    width: 30%;
+    padding-right: 30px;
+  }
+
+  .quote {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* ===== Header ===== */
+  header .container {
+    padding: 0 80px;
+  }
+  /* Menu Modal */
+  .modal {
+    min-width: 675px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* ===== Header ===== */
+  /* Menu Button */
+  .toggle-menu .text {
+    display: inline-block;
+  }
+
+  /* ===== Main ===== */
+  .container {
+    max-width: 970px;
+  }
+
+  /* Quote Section */
+  .quote-area {
+    padding: 0 15px;
+  }
+
+  @media screen and (min-width: 1201px) {
+    /* ===== Main ===== */
+    .container {
+      min-width: 1170px;
+    }
+  }
+}

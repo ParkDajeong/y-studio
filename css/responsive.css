@@ -1,0 +1,239 @@
+/* ===== 반응형 ===== */
+@media screen and (max-width: 1200px) {
+  /* ===== Main ===== */
+  /* Quote Section */
+  .quote-sec {
+    padding-bottom: 60px;
+  }
+
+  /* Projects Section */
+  .projects-sec {
+    padding: 50px 0 40px;
+  }
+
+  .link-project {
+    position: relative;
+    transform: none;
+    width: 100%;
+  }
+
+  .project-desc {
+    display: none;
+  }
+
+  .project-name {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* Partner Section */
+  .partner-sec {
+    padding-bottom: 80px;
+  }
+
+  .partner-list  {
+    row-gap: 0;
+  }
+
+  /* Contact Section */
+  .contact-sec {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* ===== header ===== */
+  .btn-text {
+    visibility: hidden;
+  }
+
+  /* Menu Modal */
+  .modal {
+    min-width: 550px;
+    padding: 55px 80px;
+  }
+
+  /* ===== Main ===== */
+  /* Projects Section */
+  .projects-sec .sec-tit {
+    margin-bottom: 40px;
+  }
+
+  .project-list {
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 50%;
+  }
+
+  .projects-sec .link-wrapper {
+    position: static;
+    margin-bottom: 50px;
+    transform: none;
+  }
+
+  .projects-sec .link-more {
+    padding: 0 15px;
+  }
+
+  /* ===== Footer ===== */
+  footer .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer-cont {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* ===== header ===== */
+  header .wrapper {
+    padding: 0 40px;
+  }
+
+  /* ===== Main ===== */
+  /* Projects Section */
+  .projects-sec .sec-tit {
+    margin-bottom: 0;
+    font-size: 23px;
+  }
+
+  .projects-sec .link-wrapper {
+    margin-bottom: 30px;
+  }
+
+  /* Partner Section */
+  .partner {
+    width: 50%;
+  }
+
+  .partner img {
+    margin: 0 auto !important;
+    padding: 30px 50px;
+  }
+
+  /* ===== Footer =====r */
+  footer .wrapper {
+    padding: 45px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* ===== header ===== */
+  header::after {
+    height: 80px;
+  }
+
+  header .wrapper {
+    height: 60px;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    max-width: 42px;
+  }
+
+  .text-widget  {
+    opacity: 0;
+  }
+
+  /* Menu Modal */
+  .modal {
+    min-width: 300px;
+    padding: 55px 40px;
+  }
+
+  .gnb-item {
+    padding: 2px 0;
+  }
+
+  .link-gnb {
+    font-size: 30px;
+  }
+
+  /* ===== Main ===== */
+  /* Quote Section */
+  .quote-sec {
+    padding: 60px 0 40px;
+  }
+
+  .quote-area {
+    flex-direction: column;
+  }
+
+  .quote-header,
+  .quote-cont {
+    width: 100%;
+  }
+
+  .quote-header {
+    padding-bottom: 30px;
+  }
+
+  .quote-header h3 {
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  /* Project Section */
+  .project {
+    width: 100%;
+    padding: 0;
+  }
+
+  .project .inner::before,
+  .project .inner::after,
+  .project .img-wrapper::before,
+  .project .img-wrapper::after {
+    display: none;
+  }
+
+  /* Partner Section */
+  .partner-sec .sec-tit {
+    font-size: 20px;
+  }
+
+  /* Contact Section */
+  .contact-sec {
+    padding: 120px 0;
+  }
+
+  .contact-sec .sec-tit {
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  /* ===== Footer =====r */
+  footer .wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .footer-cont {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* ===== Main ===== */
+  /* Quote Section */
+  .quote-icon {
+    width: 82px;
+    height: 82px;
+    margin-left: 30px;
+  }
+
+  .icon-quotations {
+    font-size: 130px;
+    transform: translate(-45%, -10%);
+  }
+
+  .quote {
+    margin-bottom: 30px;
+  }
+}
