@@ -133,8 +133,6 @@ header.on .modal {
 
 /* ===== Main ===== */
 /* Main Visual Section */
-
-/* FIX =============================================================================================== */
 .main-visual {
   height: 100vh;
 }
@@ -174,7 +172,6 @@ header.on .modal {
 .banner-texts .tit-text {
   margin: 15px 0 80px;
   color: #222;
-  /* font-size: 4.875rem; */
   font-size: 4.6vw;
   font-weight: 700;
   line-height: 1.23;
@@ -185,11 +182,9 @@ header.on .modal {
 
 .main-visual .btn-more {
   background-color: #222;
-  /* padding: 9px 26px; */
   padding: 1vw 2.39vw;
   margin-left: 5px;
   color: #fff;
-  /* font-size: 11px; */
   font-size: 0.8691vw;
   line-height: 1;
   border-radius: 50px;
@@ -248,9 +243,6 @@ header.on .modal {
   top: 248px;
   left: 326px;
 }
-
-/* =============================================================================================== */
-
 
 /* Quote Section */
 .quote-sec {
@@ -340,7 +332,6 @@ header.on .modal {
   overflow: hidden;
 }
 
-/* ================================= */
 .project .inner::before,
 .project .inner::after,
 .project .img-wrapper::before,
@@ -397,7 +388,6 @@ header.on .modal {
   bottom: 0;
   transition-delay: .6s;
 }
-/* ================================= */
 
 .project-desc {
   background-color: #fff;
