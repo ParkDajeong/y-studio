@@ -155,12 +155,13 @@ main {
 .banner-wrapper {
   width: 100%;
   height: 100%;
-  padding-left: 8%;
+  padding-left: 130px;
+  /* padding: 0 130px; */
 }
 
 .banner-texts {
   position: relative;
-  top: 125px;
+  top: 10%;
 }
 
 .banner-texts .sub-text {
@@ -173,7 +174,7 @@ main {
 }
 
 .banner-texts .tit-text {
-  margin: 15px 0 80px;
+  margin: 15px 0 12%;
   color: #222;
   font-size: 4.6vw;
   font-weight: 700;
@@ -203,13 +204,10 @@ main {
   position: absolute;
 }
 
-.img-item img {
-  width: auto;
-}
-
 .intro .img-item1 {
   top: 500px;
   left: 160px;
+  width: 48%;
 }
 
 .intro .img-item2 {
@@ -245,6 +243,35 @@ main {
 .story .img-item2 {
   top: 248px;
   left: 326px;
+}
+
+.main-visual-navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.main-visual-btn {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+.main-visual-btn-prev::after, 
+.main-visual-btn-next::after {
+  font-family: Linearicons-Free;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-visual-btn-prev::after {
+  content: "\e875";
+}
+
+.main-visual-btn-next::after {
+  content: "\e876";
 }
 
 /* Quote Section */

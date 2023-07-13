@@ -31,7 +31,7 @@ const swiper = new Swiper(".main-visual", {
     crossFade: true
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".main-visual-btn-next",
+    prevEl: ".main-visual-btn-prev",
   },
 });
