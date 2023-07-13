@@ -1,5 +1,9 @@
-const btnMenu = document.querySelectorAll(".toggle-menu");
 const header = document.querySelector("header");
+const btnMenu = document.querySelectorAll(".toggle-menu");
+
+AOS.init({
+  duration: 1000,
+});
 
 // Menu-Modal Toggle Event 
 btnMenu.forEach((item, i) => {
