@@ -305,13 +305,14 @@ main {
 
 .icon-quotations {
   display: block;
+  font-family: 'Catamaran', sans-serif;
   font-size: 180px;
-  transform: translate(-50%, -10%);
+  transform: translate(0, 20%) scale(2);
 }
 
 .icon-quotations::before, 
 .icon-quotations::after {
-  content: "\275C";
+  content: "'";
 }
 
 .quote-cont {

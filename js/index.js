@@ -3,6 +3,7 @@ const btnMenu = document.querySelectorAll(".toggle-menu");
 
 AOS.init({
   duration: 1000,
+  once: true,
 });
 
 // Menu-Modal Toggle Event 
